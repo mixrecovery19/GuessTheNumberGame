@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let attemptsDisplay = document.getElementById("attempts");
   let attemptsRecord = document.getElementById("attemptsRecord");
   let attempts = 0;
-  let lowestAttempts = Infinity; // Initialize lowestAttempts with a very high number
+  let lowestAttempts = Infinity; 
   
   submitBtn.addEventListener("click", function() {
     let userGuess = parseInt(userGuessInput.value);
@@ -27,15 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
       userGuessInput.value = ""; 
     }
   
-    attemptsDisplay.textContent = `Attempts: ${attempts}`; 
+    attemptsDisplay.textContent = `Attempts: ${attempts}`;     
     
-    // Update lowestAttempts if the current attempts are lower than the recorded lowestAttempts
-    //if (guessResult < lowestAttempts + attempts < lowestAttempts) {
-      //lowestAttempts = attempts;
-      //attemptsRecord.textContent = `Lowest Attempts: ${lowestAttempts}`;
-    //}
-    //while (userGuess === randomNumber) {
-      
-    //}
   });
 });
